@@ -41,7 +41,18 @@ public class OrderServlet extends HttpServlet{
 		}
 		
 	}
-
+	
+	/**
+	 * 新增订单
+	 * @Title: addOrder  
+	 * @Description: TODO(这里用一句话描述这个方法的作用)  
+	 * @param @param req
+	 * @param @param resp
+	 * @param @throws ServletException
+	 * @param @throws IOException    参数  
+	 * @return void    返回类型  
+	 * @throws
+	 */
 	private void addOrder(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String cidStr = req.getParameter("cid");
 	    String priceStr = req.getParameter("price");
@@ -106,7 +117,17 @@ public class OrderServlet extends HttpServlet{
 	        resp.getWriter().write("error");
 	    }
 	}
-
+	/**
+	 * 根据id查询订单
+	 * @Title: queryOrderById  
+	 * @Description: TODO(这里用一句话描述这个方法的作用)  
+	 * @param @param req
+	 * @param @param resp
+	 * @param @throws ServletException
+	 * @param @throws IOException    参数  
+	 * @return void    返回类型  
+	 * @throws
+	 */
 	private void queryOrderById(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		Integer id = Integer.parseInt(req.getParameter("id"));
 		HttpSession session = req.getSession();

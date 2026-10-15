@@ -46,6 +46,17 @@ public class UserServlet extends HttpServlet{
 		
 	}
 	
+	/**
+	 * 根据电话号码查询用户
+	 * @Title: queryUserByPhone  
+	 * @Description: TODO(这里用一句话描述这个方法的作用)  
+	 * @param @param req
+	 * @param @param resp
+	 * @param @throws ServletException
+	 * @param @throws IOException    参数  
+	 * @return void    返回类型  
+	 * @throws
+	 */
 	private void queryUserByPhone(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
 		String phone = req.getParameter("phone");
 	    MyUserInfo user = userService.queryUserByPhone(phone);
@@ -77,7 +88,18 @@ public class UserServlet extends HttpServlet{
 		}
 	    resp.getWriter().write(resultJson);
 	}
-
+	
+	/**
+	 * 更新用户
+	 * @Title: userUpdate  
+	 * @Description: TODO(这里用一句话描述这个方法的作用)  
+	 * @param @param req
+	 * @param @param resp
+	 * @param @throws ServletException
+	 * @param @throws IOException    参数  
+	 * @return void    返回类型  
+	 * @throws
+	 */
 	private void userUpdate(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
 		HttpSession session = req.getSession();
 	    MyUserInfo user = (MyUserInfo) session.getAttribute("user");
@@ -99,11 +121,15 @@ public class UserServlet extends HttpServlet{
 	}
 
 	/**
-	 * user_login
-	 * @param req 请求
-	 * @param resp 响应
-	 * @throws ServletException 异常
-	 * @throws IOException 异常
+	 * 登录
+	 * @Title: userLogin  
+	 * @Description: TODO(这里用一句话描述这个方法的作用)  
+	 * @param @param req
+	 * @param @param resp
+	 * @param @throws ServletException
+	 * @param @throws IOException    参数  
+	 * @return void    返回类型  
+	 * @throws
 	 */
 	private void userLogin(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
 		
@@ -122,11 +148,15 @@ public class UserServlet extends HttpServlet{
 	}
 	
 	/**
-	 * user_regist
-	 * @param req 请求
-	 * @param resp 响应
-	 * @throws ServletException 异常
-	 * @throws IOException 异常
+	 * 注册
+	 * @Title: userRegister  
+	 * @Description: TODO(这里用一句话描述这个方法的作用)  
+	 * @param @param req
+	 * @param @param resp
+	 * @param @throws ServletException
+	 * @param @throws IOException    参数  
+	 * @return void    返回类型  
+	 * @throws
 	 */
 	private void userRegister(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
 		

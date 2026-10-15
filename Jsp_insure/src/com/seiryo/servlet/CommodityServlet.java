@@ -47,8 +47,14 @@ public class CommodityServlet extends HttpServlet{
 	}
 	/**
 	 * 跳转购物页面
-	 * @param req
-	 * @param resp
+	 * @Title: jumpShop  
+	 * @Description: TODO(这里用一句话描述这个方法的作用)  
+	 * @param @param req
+	 * @param @param resp
+	 * @param @throws ServletException
+	 * @param @throws IOException    参数  
+	 * @return void    返回类型  
+	 * @throws
 	 */
 	private void jumpShop(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String idStr = req.getParameter("id");
@@ -76,10 +82,14 @@ public class CommodityServlet extends HttpServlet{
 	}
 	/**
 	 * 根据ID查询详情
-	 * @param req
-	 * @param resp
-	 * @throws ServletException
-	 * @throws IOException
+	 * @Title: queryCommodityInfoById  
+	 * @Description: TODO(这里用一句话描述这个方法的作用)  
+	 * @param @param req
+	 * @param @param resp
+	 * @param @throws ServletException
+	 * @param @throws IOException    参数  
+	 * @return void    返回类型  
+	 * @throws
 	 */
 	private void queryCommodityInfoById(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 	    Integer id = Integer.parseInt(req.getParameter("id"));
@@ -94,10 +104,14 @@ public class CommodityServlet extends HttpServlet{
 	}
 	/**
 	 * 根据ID查询保险信息
-	 * @param req
-	 * @param resp
-	 * @throws ServletException
-	 * @throws IOException
+	 * @Title: queryCommodityById  
+	 * @Description: TODO(这里用一句话描述这个方法的作用)  
+	 * @param @param req
+	 * @param @param resp
+	 * @param @throws ServletException
+	 * @param @throws IOException    参数  
+	 * @return void    返回类型  
+	 * @throws
 	 */
 	private void queryCommodityById(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 	    Integer id = Integer.parseInt(req.getParameter("id"));
@@ -112,10 +126,14 @@ public class CommodityServlet extends HttpServlet{
 	}
 	/**
 	 * 查询全部保险信息,有年龄的时候优先推荐年龄范围内的
-	 * @param req
-	 * @param resp
-	 * @throws ServletException
-	 * @throws IOException
+	 * @Title: selectAllCommodityList  
+	 * @Description: TODO(这里用一句话描述这个方法的作用)  
+	 * @param @param req
+	 * @param @param resp
+	 * @param @throws ServletException
+	 * @param @throws IOException    参数  
+	 * @return void    返回类型  
+	 * @throws
 	 */
 	private void selectAllCommodityList(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
 		Integer age = getLoginUserAge(req);
@@ -131,10 +149,14 @@ public class CommodityServlet extends HttpServlet{
 	
 	/**
 	 * 根据类型查询保险信息
-	 * @param req
-	 * @param resp
-	 * @throws ServletException
-	 * @throws IOException
+	 * @Title: queryCommodityByType  
+	 * @Description: TODO(这里用一句话描述这个方法的作用)  
+	 * @param @param req
+	 * @param @param resp
+	 * @param @throws ServletException
+	 * @param @throws IOException    参数  
+	 * @return void    返回类型  
+	 * @throws
 	 */
 	private void queryCommodityByType(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
 		Integer type = Integer.parseInt(req.getParameter("type"));

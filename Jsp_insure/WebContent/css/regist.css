@@ -1,0 +1,51 @@
+@charset "UTF-8";
+#context_text_21{
+	width: 90%;
+	height: 750px;
+	margin-top: -30px;
+}
+.h61{
+	margin-top: -55px;
+}
+h6{
+	color: black;
+}
+.h62{
+	margin-top: -30px;
+}
+.table_regist{
+	width: 110%;
+	height: 500px;
+	font-size: 10px;
+	background-color: #F5F5DC;
+}
+#context_text_2{
+	height: 1200px;
+}
+.table_regist .tr1{
+	border-bottom: 5px solid gray;
+}
+#register{
+	width: 100%;
+	height: 70px;
+	margin-top: 50px;
+}
+#register a{
+	text-decoration: none;
+}
+#userRegister{
+	width: 200px;
+	height: 100%;
+	line-height: 70px;
+	background-color: #FF7F50;
+	border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    color: white;
+}
+#userRegister:hover {
+	background-color: #FFA07A;
+}
+#year,#userPhone5,#userPhone4,#userPhone42,#userPass{
+	text-align: center;
+}

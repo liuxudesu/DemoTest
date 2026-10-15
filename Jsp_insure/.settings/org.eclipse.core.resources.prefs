@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//src/com/seiryo/servlet/CommodityServlet.java=UTF-8
+encoding//src/com/seiryo/servlet/OrderServlet.java=UTF-8
+encoding//src/com/seiryo/servlet/UserServlet.java=UTF-8
+encoding//src/com/seiryo/utile/JDBCUTILE.java=UTF-8
